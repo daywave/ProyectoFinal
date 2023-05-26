@@ -1,0 +1,109 @@
+{
+  "configVersion": 1,
+  "timestamp": 1685124818059,
+  "index": "https://github.com/Carcio03/PWA/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://github.com/Carcio03/PWA/favicon.ico",
+        "https://github.com/Carcio03/PWA/index.html",
+        "https://github.com/Carcio03/PWA/main.cfe131921ad2c5f5.js",
+        "https://github.com/Carcio03/PWA/manifest.webmanifest",
+        "https://github.com/Carcio03/PWA/polyfills.895df57aa7d36795.js",
+        "https://github.com/Carcio03/PWA/runtime.637270ac04fd9adc.js",
+        "https://github.com/Carcio03/PWA/styles.9e4f57a5653e8bc6.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://github.com/Carcio03/PWA/assets/icons/icon-128x128.png",
+        "https://github.com/Carcio03/PWA/assets/icons/icon-144x144.png",
+        "https://github.com/Carcio03/PWA/assets/icons/icon-152x152.png",
+        "https://github.com/Carcio03/PWA/assets/icons/icon-192x192.png",
+        "https://github.com/Carcio03/PWA/assets/icons/icon-384x384.png",
+        "https://github.com/Carcio03/PWA/assets/icons/icon-512x512.png",
+        "https://github.com/Carcio03/PWA/assets/icons/icon-72x72.png",
+        "https://github.com/Carcio03/PWA/assets/icons/icon-96x96.png",
+        "https://github.com/Carcio03/PWA/assets/images/Axolotl.jpeg",
+        "https://github.com/Carcio03/PWA/assets/images/Carlos.jpeg",
+        "https://github.com/Carcio03/PWA/assets/images/Daniel.jpeg",
+        "https://github.com/Carcio03/PWA/assets/images/Leo.jpeg",
+        "https://github.com/Carcio03/PWA/assets/images/favicon.png",
+        "https://github.com/Carcio03/PWA/assets/images/home-img-1.jpg",
+        "https://github.com/Carcio03/PWA/assets/images/home-img-2.jpg",
+        "https://github.com/Carcio03/PWA/assets/images/home-img-3.jpg",
+        "https://github.com/Carcio03/PWA/assets/images/icon-1.png",
+        "https://github.com/Carcio03/PWA/assets/images/icon-2.png",
+        "https://github.com/Carcio03/PWA/assets/images/icon-3.png",
+        "https://github.com/Carcio03/PWA/assets/images/icon-4.png",
+        "https://github.com/Carcio03/PWA/assets/images/icon-5.png",
+        "https://github.com/Carcio03/PWA/assets/images/icon-6.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://github.com/Carcio03/PWA/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://github.com/Carcio03/PWA/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://github.com/Carcio03/PWA/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://github.com/Carcio03/PWA/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://github.com/Carcio03/PWA/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://github.com/Carcio03/PWA/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://github.com/Carcio03/PWA/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://github.com/Carcio03/PWA/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://github.com/Carcio03/PWA/assets/images/Axolotl.jpeg": "cfe7a074203e6082dc12170beeb6efa2a2096627",
+    "https://github.com/Carcio03/PWA/assets/images/Carlos.jpeg": "3e495e0816adb3b1c1bb4bc2004657df7b18b88b",
+    "https://github.com/Carcio03/PWA/assets/images/Daniel.jpeg": "b5c0e678e8b1096e2dd16db7749ea401d2a80fdc",
+    "https://github.com/Carcio03/PWA/assets/images/Leo.jpeg": "7b2ab5e007fc56f59f3343aad3a4f1ae9c17653f",
+    "https://github.com/Carcio03/PWA/assets/images/favicon.png": "d57466014bc5e1b3396cbca828100b65471d7bca",
+    "https://github.com/Carcio03/PWA/assets/images/home-img-1.jpg": "dd2516493cde455a5719a79992075e2872b291ea",
+    "https://github.com/Carcio03/PWA/assets/images/home-img-2.jpg": "8dcdcdb3280f978e7ee08e036fe55a77c3b30049",
+    "https://github.com/Carcio03/PWA/assets/images/home-img-3.jpg": "87d77e4d8519a91fd396c72a183cf3df4466eadc",
+    "https://github.com/Carcio03/PWA/assets/images/icon-1.png": "0159cbec7c19cffcf26d509749dea6857d7a705b",
+    "https://github.com/Carcio03/PWA/assets/images/icon-2.png": "8989f9af5365d5db0140f98c12ae6a7dd96248b3",
+    "https://github.com/Carcio03/PWA/assets/images/icon-3.png": "81c05e5e0a4efc89fd89413fb1b2fc9d44775000",
+    "https://github.com/Carcio03/PWA/assets/images/icon-4.png": "4620c74853264d9a0f1c28f50f032cf781050488",
+    "https://github.com/Carcio03/PWA/assets/images/icon-5.png": "00b9d40fdba98fe28339b7280918d8d1005fdffa",
+    "https://github.com/Carcio03/PWA/assets/images/icon-6.png": "ee3b28d2e69f44717fb094db57fc1be0a535bcdb",
+    "https://github.com/Carcio03/PWA/favicon.ico": "927ec9f014ecfec695f48bcf66280d3e6ce58397",
+    "https://github.com/Carcio03/PWA/index.html": "acc43c33ff120126a4758083c8615aa8860e2d42",
+    "https://github.com/Carcio03/PWA/main.cfe131921ad2c5f5.js": "a73272dd4af6d89d4aa8733cc250a824b836cb17",
+    "https://github.com/Carcio03/PWA/manifest.webmanifest": "958ced3a1f9c02b82fd1220905a3310a49a14367",
+    "https://github.com/Carcio03/PWA/polyfills.895df57aa7d36795.js": "6e069e3e594672bf87371c801042a66b9a0ebb4a",
+    "https://github.com/Carcio03/PWA/runtime.637270ac04fd9adc.js": "c63cc4cd0966d2a2633778f3e71afa87165d8cc8",
+    "https://github.com/Carcio03/PWA/styles.9e4f57a5653e8bc6.css": "a728bbb45f434f59031b4fef1ab6391ad4a66b12"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
