@@ -1,0 +1,75 @@
+*{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFC4C4;
+    font-weight: bold;
+}
+li{
+    padding: 20px;
+}
+img{
+    border-radius: 15px;
+}
+h5{
+    padding-top: 45px;
+}
+ul{
+    padding: 30;
+}
+li{
+    padding-left: 90px;
+}
+
+/* Estilos generales */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .room-card {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFF5E4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .room-description {
+    margin-bottom: 10px;
+  }
+  
+  .room-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #850E35;
+  }
+  
+  /* Estilos específicos para cada habitación */
+  .individual-style {
+    background-color: #FFF5E4;
+  }
+  
+  .triple-style {
+    background-color: #FFC4C4;
+  }
+  
+  .double-style {
+    background-color: hsl(347, 100%, 88%);
+  }
+  
+  .suite-style {
+    background-color: #f5a6c0;
+    
+  }
+  
+  .family-style {
+    background-color: #ffdbdb;
+  }

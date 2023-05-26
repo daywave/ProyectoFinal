@@ -1,0 +1,29 @@
+    <style>table {
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      
+      td, th {
+        border: 1px solid black;
+        padding: 5px;
+      }</style>
+<table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Teléfono</th>
+        <th>Fecha</th>
+        <th>Habitación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let registro of registros">
+        <td>{{ registro.nombre }}</td>
+        <td>{{ registro.correo }}</td>
+        <td>{{ registro.tel }}</td>
+        <td>{{ registro.fecha }}</td>
+        <td>{{ registro.habitacion }}</td>
+      </tr>
+    </tbody>
+  </table>

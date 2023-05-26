@@ -1,0 +1,68 @@
+<style>button.active {
+   :host.active {
+  background-color: green;
+}
+ }
+ .example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+.btn-primary {
+			background-color: #850E35;
+			border-color: #850E35;
+			font-weight: bold;
+		}
+		
+		.btn-primary:hover, .btn-primary:focus {
+			background-color: #EE6983;
+			border-color: #EE6983;
+		}
+ </style>
+ <div [ngStyle]="{'background-color': backgroundColor}">
+<section class="header">
+
+    <div class="flex">
+        <a routerLink="/" class="logo">Axolotl Palace</a>
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+ 
+    <nav class="navbar">
+       <a routerLink="/">Axolotl</a>
+       <a routerLink="about">Sobre Nosotros</a>
+       <a routerLink="registro">Reserva</a>
+       <a routerLink="galeria">Galeria</a>
+       <a routerLink="reservaciones">Reservaciones</a>
+       <a routerLink="habitacion-list">Habitacion</a>
+       <div class="example-button-row">
+        <button (click)="changeColor()" mat-raised-button type="submit" class="btn btn-primary ">Cambiar color</button>
+        
+     </div>
+    </nav>
+ 
+ </section>
+
+  <router-outlet></router-outlet>
+</div>

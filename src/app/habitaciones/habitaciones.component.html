@@ -1,0 +1,38 @@
+<div class="room-container">
+  <div [ngSwitch]="habitacion" class="room-card">
+    <div *ngSwitchCase="'individual'" [ngClass]="'individual-style'">
+      <h2 class="room-title">Habitación Individual</h2>
+      <p class="room-description">
+        Disponible por 500 pesos, es un espacio acogedor y funcional que ofrece comodidad a un precio asequible. Aunque es una habitación de tamaño moderado, está diseñada de manera eficiente para maximizar el espacio disponible.
+      </p>
+      <p class="room-price">$500 por noche</p>
+    </div>
+    <div *ngSwitchCase="'triple'" [ngClass]="'triple-style'">
+      <h2 class="room-title">Habitación Triple</h2>
+      <p class="room-description">
+        La habitación triple es un espacio amplio y versátil que puede alojar a tres personas cómodamente. Normalmente cuenta con tres camas individuales o una combinación de camas individuales y camas matrimoniales, todas ellas con ropa de cama de calidad. También incluye mesitas de noche, lámparas individuales y armarios o espacios de almacenamiento suficientes para cada huésped.
+      </p>
+      <p class="room-price">$1100 por noche</p>
+    </div>
+    <div *ngSwitchCase="'doble'" [ngClass]="'double-style'">
+      <h2 class="room-title">Habitación Doble</h2>
+      <p class="room-description">
+        La habitación doble es un espacio diseñado para alojar a dos personas. Por lo general, cuenta con una cama matrimonial o dos camas individuales con ropa de cama cómoda y suave. Al igual que en la habitación triple, encontrarás mesitas de noche con lámparas, armarios o espacios de almacenamiento y, dependiendo del lugar, un baño privado o compartido.
+      </p>
+      <p class="room-price">$800 por noche</p>
+    </div>
+    <div *ngSwitchCase="'suite'" [ngClass]="'suite-style'">
+      <h2 class="room-title">Habitación Suite</h2>
+      <p class="room-description">
+        La habitación suite es un espacio de alojamiento más lujoso y amplio, diseñado para ofrecer una experiencia de hospedaje de mayor categoría. Suele contar con una zona de dormitorio separada y una sala de estar o área de estar adicional. La habitación suite puede incluir una cama matrimonial o una combinación de camas individuales y matrimoniales, todas ellas con ropa de cama de alta calidad.
+      </p>
+      <p class="room-price">$1500 por noche</p>
+    </div>
+    <div *ngSwitchCase="'familiar'" [ngClass]="'family-style'">
+      <h2 class="room-title">Habitación Familiar</h2>
+      <p class="room-description">
+          La habitación familiar es una opción ideal para familias o grupos más grandes que desean alojarse juntos. Suele contar con camas matrimoniales y camas individuales en una combinación adecuada para acomodar a varios miembros de la familia o grupo. Al igual que en las otras habitaciones, se proporciona ropa de cama de calidad y comodidades básicas como mesitas de noche, lámparas, armarios o espacios de almacenamiento y baño privado o compartido. Además, la habitación familiar puede contar con espacio adicional, como una sala de estar o un área de juegos, para que todos los miembros de la familia puedan disfrutar de su estancia juntos.        </p>
+      <p class="room-price">$1200 por noche</p>
+    </div>
+  </div>
+</div>
