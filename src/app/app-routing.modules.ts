@@ -7,6 +7,8 @@ import { ReservacionesComponent } from './reservaciones/reservaciones.component'
 import { GaleriaComponent } from './galeria/galeria.component';
 import { HabitacionListComponent } from './habitacion-list/habitacion-list.component';
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
+import { ContactComponent } from './contact/contact.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
     { path: 'galeria', component: GaleriaComponent},
     { path: 'habitacion-list', component: HabitacionListComponent},
     { path: 'habitacion/:habitacion', component: HabitacionesComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'questions', component: QuestionsComponent },
 ];
 
 @NgModule({
