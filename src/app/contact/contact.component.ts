@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -6,25 +6,22 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   forma: FormGroup;
-  usuario: any = {
-    nombre: "",
-    apellido: "",
-    correo: ""
-  };
+  usuario:any={
+    nombre:"",
+    apellido:"",
+    correo:"" }
 
-  constructor() {}
-
-  ngOnInit(): void {
+  constructor(){
     this.forma = new FormGroup({
-      nombre: new FormControl("", Validators.required),
-      apellido: new FormControl("", Validators.required),
-      correo: new FormControl("", [Validators.required, Validators.email])
+      'nombre': new FormControl(this.usuario.nombre, [Validators.required, Validators.minLength(3)]),
+      'apellido': new FormControl(this.usuario.apellido, Validators.required),
+      'correo': new FormControl(this.usuario.correo, [Validators.required,Validators.email])
     });
   }
 
-  guardarCambios(): void {
+  guardarCambios(): void{
     console.log("metodo guardarCambios");
     console.log(this.forma);
     console.log(this.forma.value);
