@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Habitacion } from '.vscode/habitaciones';
+import { Habitacion } from './habitaciones/habitaciones.component';
 
 @Injectable({
   providedIn: 'root'

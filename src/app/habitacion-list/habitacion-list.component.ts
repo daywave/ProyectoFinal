@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HabitacionService } from '../../app/habitacion.service';
-import { Habitacion } from '.vscode/habitaciones';
 import { CommentsComponent } from './../comments/comments.component';
 
+import { Habitacion } from '../habitaciones/habitaciones.component';
 
 
 
