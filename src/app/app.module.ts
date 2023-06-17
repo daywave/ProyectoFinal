@@ -30,6 +30,8 @@ import { TablaComponent } from './tabla/tabla.component';
 import { MatSelectModule } from '@angular/material/select';
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { ContactComponent } from './contact/contact.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 @NgModule({
   declarations: [			
@@ -46,7 +48,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
       VideoPipe,MasonrryComponent,
       MapboxComponent,
       TablaComponent,
-      HabitacionesComponent
+      HabitacionesComponent,
+      ContactComponent,
+      QuestionsComponent
    ],
   imports: [
     BrowserModule,
