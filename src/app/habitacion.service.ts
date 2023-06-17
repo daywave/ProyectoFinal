@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Habitacion } from './habitaciones/habitaciones.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HabitacionService {
 
-  private habitaciones: Habitacion[] = [
+  private habitaciones: any[] = [
     { id: 1, nombre: 'Habitación individual', tipo: 'Individual', precio: 500, descripcion: 'Habitación para una persona', imagen: 'https://bufondearenillashotel.es/wp-content/uploads/2015/02/habitacion-individual.jpg' },
     { id: 2, nombre: 'Habitación doble', tipo: 'Doble', precio: 800, descripcion: 'Habitación para dos personas', imagen: 'https://hotelmalinallihuamantla.com/wp-content/uploads/2019/12/habitacion-doble-malinalli-1.jpg' },
     { id: 3, nombre: 'Habitación triple', tipo: 'Triple', precio: 1100, descripcion: 'Habitación para tres personas', imagen: 'https://hotelflamingoinn.com.mx/wp-content/uploads/2021/05/habitacion-ejecuiva-triple.jpg' },
@@ -17,7 +16,7 @@ export class HabitacionService {
 
   constructor() { }
 
-  getHabitaciones(): Observable<Habitacion[]> {
+  getHabitaciones(): Observable<any[]> {
     return of(this.habitaciones);
   }
 }

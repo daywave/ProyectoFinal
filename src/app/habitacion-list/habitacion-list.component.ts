@@ -2,9 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HabitacionService } from '../../app/habitacion.service';
 import { CommentsComponent } from './../comments/comments.component';
 
-import { Habitacion } from '../habitaciones/habitaciones.component';
-
-
 
 @Component({
   selector: 'app-habitacion-list',
@@ -14,7 +11,7 @@ import { Habitacion } from '../habitaciones/habitaciones.component';
 export class HabitacionListComponent implements OnInit {
   comments: string[] = [];
 
-  habitaciones: Habitacion[] = [];
+  habitaciones: any[] = [];
   constructor(private habitacionService: HabitacionService) {}
   ngOnInit() {
     this.getHabitaciones();
