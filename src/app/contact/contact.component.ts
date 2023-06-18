@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -33,13 +34,13 @@ export class ContactComponent {
       message: "I'm from Devro LABS"
     };
 
-    this.http.post('http://localhost:3000/send-email', formData)
+    this.http.post('http://localhost:3000/reservaciones', formData)
       .subscribe(response => {
         console.log(response);
-        // Puedes realizar acciones adicionales después de enviar el correo
+          console.log("Todo salió bien");
       }, error => {
         console.error(error);
-        // Puedes manejar los errores aquí
+        console.log("Hubo un error en la comunicación");
       });
   }
 }

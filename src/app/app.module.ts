@@ -32,6 +32,8 @@ import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { ContactComponent } from './contact/contact.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [			

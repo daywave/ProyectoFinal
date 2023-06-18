@@ -1,65 +1,63 @@
 <section class="contact" id="contact">
     <div class="row">
-        <form method="post"[formGroup]="forma" (ngSubmit)="guardarCambios()" class="needs-validation" novalidate >
+        <form method="post" [formGroup]="forma" (ngSubmit)="guardarCambios()" class="needs-validation" novalidate>
             <h3>Contactanos</h3>
             <div class="container">
                 <div class="form-group row">
                     <label class="col-2 col-form-label">Nombre</label>
                     <div class="col-8">
-                        
                         <input class="form-control"
-                        [ngClass]="{ 'is-invalid':!forma.get('nombre')?.valid}"
-                        type="text"
-                        placeholder="Nombre"
-                        formControlName="nombre">
+                               [ngClass]="{ 'is-invalid': !forma.get('nombre')?.valid }"
+                               type="text"
+                               placeholder="Nombre"
+                               formControlName="nombre">
                         <div *ngIf="forma.controls['nombre'].errors?.['required']" class="invalid-feedback">
                             El nombre es necesario
                         </div>
                         <div *ngIf="forma.controls['nombre'].errors?.['minlength']" class="invalid-feedback">
-                            Ingresa por lo menos 3 caracteres 
+                            Ingresa por lo menos 3 caracteres
                         </div>
                     </div>
-                </div><br><br>
+                </div>
+                <br><br>
                 <div class="form-group row">
                     <label class="col-2 col-form-label">Apellido</label>
                     <div class="col-8">
-                        <input class="form-control" 
-                        type="text" placeholder="Apellido" 
-                        formControlName="apellido">
+                        <input class="form-control"
+                               type="text"
+                               placeholder="Apellido"
+                               formControlName="apellido">
                     </div>
-                </div><br><br>
+                </div>
+                <br><br>
                 <div class="form-group row">
                     <label class="col-2 col-form-label">Correo</label>
                     <div class="col-8">
-                        <input class="form-control" 
-                        [ngClass]="{'is-invalid':!forma.get('correo')?.valid }"
-                        type="text" 
-                        placeholder="Correo electronico" 
-                        formControlName="correo">
+                        <input class="form-control"
+                               [ngClass]="{ 'is-invalid': !forma.get('correo')?.valid }"
+                               type="text"
+                               placeholder="Correo electronico"
+                               formControlName="correo">
                         <div *ngIf="forma.controls['correo'].errors?.['required']" class="invalid-feedback">
-                        Correo obligatorio
-                    </div>
+                            Correo obligatorio
+                        </div>
                         <div *ngIf="forma.controls['correo'].errors?.['email']" class="invalid-feedback">
                             El correo no tiene el formato correcto
                         </div>
                     </div>
-                </div><br>
+                </div>
+                <br>
                 <div class="form-group row">
                     <label class="col-2 col-form-label">&nbsp;</label>
                     <div class="input-group col-md-8">
-                        <button type="submit" class="btn btn-outline-primary" [disabled]="forma.invalid" >Enviar</button>
+                        <button type="submit" class="btn btn-outline-primary" [disabled]="forma.invalid">Enviar</button>
                     </div>
                 </div>
             </div>
-            <!--<p style="text-align:center">{{forma.valid}}</p>-->
         </form>
- 
-       <div class="faq">
-         <img style="width: 70%; margin-left: 60px;" src="../../assets/images/Ajolotecontacto.jpeg" alt="">
-       </div>
- 
-    </div>
- 
- </section>
 
- 
+        <div class="faq">
+            <img style="width: 70%; margin-left: 60px;" src="../../assets/images/Ajolotecontacto.jpeg" alt="">
+        </div>
+    </div>
+</section>
