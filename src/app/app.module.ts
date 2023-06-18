@@ -34,6 +34,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { ContactComponent } from './contact/contact.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { SmsComponent } from './sms/sms.component';
 
 =======
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -59,7 +61,9 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
       TablaComponent,
       HabitacionesComponent,
       ContactComponent,
-      QuestionsComponent
+      QuestionsComponent,
+      LoginComponent,
+      SmsComponent
    ],
   imports: [
     BrowserModule,

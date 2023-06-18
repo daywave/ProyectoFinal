@@ -9,9 +9,11 @@ import { HabitacionListComponent } from './habitacion-list/habitacion-list.compo
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { ContactComponent } from './contact/contact.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
+    { path: 'login', component: LoginComponent },
     { path: 'about', component: AboutComponent },
     { path: 'registro', component: RegistroComponent },
     { path: 'reservaciones', component: ReservacionesComponent },
