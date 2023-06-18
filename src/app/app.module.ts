@@ -30,19 +30,16 @@ import { TablaComponent } from './tabla/tabla.component';
 import { MatSelectModule } from '@angular/material/select';
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-<<<<<<< Updated upstream
 import { ContactComponent } from './contact/contact.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { SmsComponent } from './sms/sms.component';
 
-=======
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
->>>>>>> Stashed changes
 
 @NgModule({
   declarations: [			
