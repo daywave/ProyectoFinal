@@ -1,1 +1,22 @@
-<p>sms works!</p>
+<div class="container">
+    <h1>Agrega un número telefónico</h1>
+  
+    <div class="form-group">
+      <label for="phone-input">Número de teléfono:</label>
+      <input type="text" id="phone-input" [(ngModel)]="phoneNumber">
+    </div>
+  
+    <div class="form-group">
+      <button id="recaptcha-container" (click)="sendSMSVerificationCode()">Enviar código SMS</button>
+    </div>
+  
+    <div class="form-group">
+      <label for="code-input">Código de verificación SMS:</label>
+      <input type="text" id="code-input" [(ngModel)]="verificationCode">
+    </div>
+  
+    <div class="form-group">
+      <button (click)="verifySMSCode()">Verificar código SMS</button>
+    </div>
+  </div>
+  

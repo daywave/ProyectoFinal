@@ -10,10 +10,12 @@ import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { ContactComponent } from './contact/contact.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { LoginComponent } from './login/login.component';
+import { SmsComponent } from './sms/sms.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'sms', component: SmsComponent },
     { path: 'about', component: AboutComponent },
     { path: 'registro', component: RegistroComponent },
     { path: 'reservaciones', component: ReservacionesComponent },
