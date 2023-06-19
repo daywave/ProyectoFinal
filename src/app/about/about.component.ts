@@ -20,14 +20,44 @@ export class AboutComponent {
 
   Hablar(){
 
-    const X = document.getElementById('Titulo')?.innerHTML;
+    const X = document.getElementById('1')?.innerHTML;
     speechSynthesis.speak(new SpeechSynthesisUtterance(X));
 
-    const X1 = document.getElementById('Contenido')?.innerHTML;
+    const X1 = document.getElementById('2')?.innerHTML;
     speechSynthesis.speak(new SpeechSynthesisUtterance(X1));
 
-    const X2 = document.getElementById('Contenido2')?.innerHTML;
+    const X2 = document.getElementById('3')?.innerHTML;
     speechSynthesis.speak(new SpeechSynthesisUtterance(X2));
+
+    const X3 = document.getElementById('4')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X3));
+
+    const X4 = document.getElementById('5')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X4));
+
+    const X5 = document.getElementById('6')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X5));
+
+    const X6 = document.getElementById('7')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X6));
+
+    const X7 = document.getElementById('8')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X7));
+
+    const X8 = document.getElementById('9')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X8));
+
+    const X9 = document.getElementById('10')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X9));
+
+    const X10 = document.getElementById('11')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X10));
+
+    const X11 = document.getElementById('12')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X11));
+
+    const X12 = document.getElementById('13')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X12));
 
   }
 
@@ -47,34 +77,19 @@ export class AboutComponent {
 
   EnlacesB(){
 
-    const X = document.getElementById('Enlace') as HTMLAnchorElement;
-    const X2 = document.getElementById('Enlace2') as HTMLAnchorElement;
-    const X3 = document.getElementById('Enlace3') as HTMLAnchorElement;
+    const X = document.getElementById('A1') as HTMLAnchorElement;
 
     X.style.backgroundColor = 'black';
     X.style.color = 'yellow';
 
-    X2.style.backgroundColor = 'black';
-    X2.style.color = 'yellow';
-
-    X3.style.backgroundColor = 'black';
-    X3.style.color = 'yellow';
   }
 
   EnlacesA(){
 
-    const X = document.getElementById('Enlace') as HTMLAnchorElement;
-    const X2 = document.getElementById('Enlace2') as HTMLAnchorElement;
-    const X3 = document.getElementById('Enlace3') as HTMLAnchorElement;
+    const X = document.getElementById('A1') as HTMLAnchorElement;
 
     X.style.backgroundColor = 'white';
     X.style.color = 'blue';
-
-    X2.style.backgroundColor = 'white';
-    X2.style.color = 'blue';
-
-    X3.style.backgroundColor = 'white';
-    X3.style.color = 'blue';
 
   }
 
