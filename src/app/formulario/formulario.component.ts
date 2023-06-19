@@ -9,8 +9,12 @@ import { Router } from '@angular/router';
 })
 export class FormularioComponent {
   cita: any = {};
+  minDate: string; 
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService, private router: Router) {
+    const today = new Date();
+    this.minDate = today.toISOString().split('T')[0];
+   }
 
   ngOnInit(): void {
   }
@@ -19,7 +23,7 @@ export class FormularioComponent {
     this.userService.guardarCita(this.cita)
       .then(() => {
         console.log('Cita guardada');
-        this.router.navigate(['/usuarios']);
+        this.router.navigate(['/reservaciones']);
       })
       .catch((error: any) => {
         console.error('Error al guardar la cita', error);

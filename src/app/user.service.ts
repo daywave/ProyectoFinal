@@ -1,7 +1,9 @@
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, signInWithPopup, GoogleAuthProvider, signInWithPhoneNumber } from '@angular/fire/auth';
 import { ConfirmationResult, RecaptchaVerifier } from 'firebase/auth';
 import { Injectable } from '@angular/core';
-import { getDatabase, ref, push } from 'firebase/database';
+import { getDatabase,get, ref, push, equalTo, orderByChild, query, DataSnapshot, startAt, endAt } from 'firebase/database';
+import Swal from 'sweetalert2';
+
 
 @Injectable({
   providedIn: 'root'
@@ -27,9 +29,36 @@ export class UserService {
     this.confirmationResult = null;
   }
   
-  guardarCita(cita: any) {
+  async guardarCita(cita: any) {
     const citasRef = ref(this.db, 'citas');
-    return push(citasRef, cita);
+  
+    if (!cita.hora) {
+      throw new Error('La cita debe tener una fecha y hora');
+    }
+  
+    const citasQuery = query(
+      citasRef,
+      orderByChild('hora'),
+      equalTo(cita.hora)
+    );
+  
+    try {
+      const snapshot = await get(citasQuery);
+  
+      if (snapshot.exists()) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Fecha y hora no disponibles',
+        });
+        throw new Error('La cita ya existe');
+      } else {
+        return push(citasRef, cita);
+      }
+    } catch (error) {
+      console.error('Error al guardar la cita', error);
+      throw error;
+    }
   }
 
   registrar({ email, password }: any) {
