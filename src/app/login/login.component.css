@@ -76,3 +76,17 @@
     }
   }
   
+  .register-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .register-link p {
+    margin-bottom: 0;
+  }
+  
+  .register-link a {
+    color: #f35221;
+    text-decoration: underline;
+    cursor: pointer;
+  }

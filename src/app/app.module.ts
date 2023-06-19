@@ -40,6 +40,9 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { ListaComponent } from './lista/lista.component';
+import { UserService } from './user.service';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [			
@@ -60,7 +63,9 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
       ContactComponent,
       QuestionsComponent,
       LoginComponent,
-      SmsComponent
+      SmsComponent,
+      ListaComponent,
+      FormularioComponent
    ],
   imports: [
     BrowserModule,
@@ -85,7 +90,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase())
   ],
-  providers: [HabitacionService,LocalStorageService],
+  providers: [HabitacionService,LocalStorageService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,29 @@
+<div class="container">
+  
+    <form (ngSubmit)="guardarCita()" class="form-container">
+      <h2>Guardar Cita</h2>
+      <div>
+        <label>Nombre:</label>
+        <input type="text" [(ngModel)]="cita.nombre" name="nombre" required>
+      </div>
+      <div>
+        <label>Fecha:</label>
+        <input type="date" [(ngModel)]="cita.fecha" name="fecha" required>
+      </div>
+      <div>
+        <label>Hora:</label>
+        <input type="time" [(ngModel)]="cita.hora" name="hora" required>
+      </div>
+      <div>
+        <label>Tipo de Habitación:</label>
+        <select [(ngModel)]="cita.tipoHabitacion" name="tipoHabitacion" required>
+          <option value="">Seleccione</option>
+          <option value="Sencilla">Sencilla</option>
+          <option value="Doble">Doble</option>
+          <option value="Suite">Suite</option>
+        </select>
+      </div>
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+  
