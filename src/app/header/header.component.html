@@ -52,8 +52,8 @@
  
     <nav class="navbar">
        <a routerLink="/">Axolotl</a>
-       <a  routerLink="login">Iniciar Sesion</a>
-       <button class="btn btn-info" (click)="onClick()">Cerrar Sesión</button>
+       <a *ngIf="!usuario" routerLink="login">Iniciar Sesion</a>
+       <button *ngIf="usuario" class="btn btn-info" (click)="onClick()">Cerrar Sesión</button>
        <a routerLink="about">Sobre Nosotros</a>
        <a routerLink="registro">Reserva</a>
        <a routerLink="contact">Contactanos</a>

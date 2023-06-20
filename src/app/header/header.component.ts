@@ -3,16 +3,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
-import { Auth,getAuth } from '@angular/fire/auth';
-import { firebaseApp$ } from '@angular/fire/app';
-
+import { Auth,getAuth, onAuthStateChanged } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
+  esAdmin: boolean = false;
   auth: Auth = getAuth();
+  usuario = this.auth.currentUser;
   backgroundColor = '#FFF5E4';
   prevBackgroundColor = '';
   color: string='';
@@ -35,22 +35,37 @@ export class HeaderComponent {
     this.color = this.color === 'primary' ? 'accent' : 'primary';
   }
 
-  // ngOnInit() {
+  validarusuario()
+{
+   onAuthStateChanged(this.auth, usuario =>{
+      if (usuario){
+        console.log('Usuario autenticado:', this.usuario);
+      }
+      if (!usuario){
+        console.log('Usuario no identificado');
+      }
+   });
+
+   this.validarusuario();
+
+}
+  ngOnInit() {
+    const auth = getAuth();
+  this.usuario = auth.currentUser;
+
+  if (this.usuario) {
+    // El usuario está autenticado, realiza las acciones necesarias
+    console.log('Usuario autenticado:', this.usuario);
     
-  //   this.auth.authState.subscribe(user => {
-  //     if (user) {
-  //       // El usuario está logeado
-  //       console.log('Usuario logeado:', user);
-  //       this.isLoggedIn = true;
-  //       this.isAdmin = user.role === 'admin';
-  //     } else {
-  //       // El usuario no está logeado
-  //       console.log('Usuario no logeado');
-  //       this.isLoggedIn = false;
-  //       this.isAdmin = false;
-  //     }
-  //   });
-  // }
+    // Verificar si el usuario es administrador
+    // Aquí debes implementar la lógica para determinar si el usuario es administrador
+    // En este ejemplo, asumimos que el usuario es administrador si su uid es "admin"
+    this.esAdmin = this.usuario.uid === 'admin';
+  } else {
+    // El usuario no está autenticado
+    console.log('Usuario no autenticado');
+  }
+  }
   
 
   // onSubmit() {

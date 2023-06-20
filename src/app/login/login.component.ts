@@ -3,6 +3,7 @@ import { FormGroup } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -27,9 +28,15 @@ export class LoginComponent {
     .then(Response => {
       console.log("iniciado con exito");
       console.log(Response);
-      this.router.navigate(['/main'])
+      this.router.navigate(['/'])
     })
-    .catch(error => console.log(error))
+    .catch(error => {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Usuario o contraseña invalidos',
+      }),
+      console.log(error)})
   }
 
   onClick(){
@@ -37,9 +44,14 @@ export class LoginComponent {
     .then(Response =>{
       console.log("iniciado con exito");
       console.log(Response);
-      this.router.navigate(['/main'])
+      this.router.navigate(['/'])
     })
     .catch(error => {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Usuario o contraseña invalidos',
+      });
       console.log("nada");
       console.log(error)
     })
