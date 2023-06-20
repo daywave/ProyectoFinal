@@ -12,14 +12,35 @@ export class GaleriaComponent {
 
   Hablar(){
 
-    const X = document.getElementById('Titulo')?.innerHTML;
+    const X = document.getElementById('1')?.innerHTML;
     speechSynthesis.speak(new SpeechSynthesisUtterance(X));
 
-    const X1 = document.getElementById('Contenido')?.innerHTML;
+    const X1 = document.getElementById('2')?.innerHTML;
     speechSynthesis.speak(new SpeechSynthesisUtterance(X1));
 
-    const X2 = document.getElementById('Contenido2')?.innerHTML;
+    const X2 = document.getElementById('3')?.innerHTML;
     speechSynthesis.speak(new SpeechSynthesisUtterance(X2));
+
+    const X3 = document.getElementById('4')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X3));
+
+    const X4 = document.getElementById('5')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X4));
+
+    const X5 = document.getElementById('6')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X5));
+
+    const X6 = document.getElementById('7')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X6));
+
+    const X7 = document.getElementById('8')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X7));
+
+    const X8 = document.getElementById('9')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X8));
+
+    const X9 = document.getElementById('10')?.innerHTML;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(X9));
 
   }
 
