@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1687235883534,
+  "timestamp": 1687236298139,
   "index": "https://daywave.github.io/ProyectoFinal/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://daywave.github.io/ProyectoFinal/favicon.ico",
         "https://daywave.github.io/ProyectoFinal/index.html",
-        "https://daywave.github.io/ProyectoFinal/main.c3ea77dca7cd7dc1.js",
+        "https://daywave.github.io/ProyectoFinal/main.903804a48ee9c6f4.js",
         "https://daywave.github.io/ProyectoFinal/manifest.webmanifest",
         "https://daywave.github.io/ProyectoFinal/polyfills.d7e6fd88a5208230.js",
         "https://daywave.github.io/ProyectoFinal/runtime.637270ac04fd9adc.js",
@@ -86,8 +86,8 @@
     "https://daywave.github.io/ProyectoFinal/assets/images/icon-6.png": "ee3b28d2e69f44717fb094db57fc1be0a535bcdb",
     "https://daywave.github.io/ProyectoFinal/assets/images/tiraAjolote.jpeg": "2d0fc06865b3546a5558c8f7e27d83d75cd3d3c6",
     "https://daywave.github.io/ProyectoFinal/favicon.ico": "927ec9f014ecfec695f48bcf66280d3e6ce58397",
-    "https://daywave.github.io/ProyectoFinal/index.html": "efb8c40af5c41aaaa4bbc8b0fb9e77f5bee512bf",
-    "https://daywave.github.io/ProyectoFinal/main.c3ea77dca7cd7dc1.js": "c4730f398e4e1d5fe2ead36234678004a4d037fa",
+    "https://daywave.github.io/ProyectoFinal/index.html": "069c8e9c954167f718b6383c1692add935cf8059",
+    "https://daywave.github.io/ProyectoFinal/main.903804a48ee9c6f4.js": "5a184451f41645dffed298686ea349ba7f539967",
     "https://daywave.github.io/ProyectoFinal/manifest.webmanifest": "0a4c51ab222798e2eafe2b8dbf79a2e7fc8060ce",
     "https://daywave.github.io/ProyectoFinal/polyfills.d7e6fd88a5208230.js": "c734406a997e0c5a773a4002c8ad7a21c1f8c145",
     "https://daywave.github.io/ProyectoFinal/runtime.637270ac04fd9adc.js": "c63cc4cd0966d2a2633778f3e71afa87165d8cc8",
